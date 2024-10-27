@@ -1,0 +1,114 @@
+/* index.css */
+
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #4a90e2, #50e3c2);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Investment Section */
+.investments {
+  background-color: white;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.investments h2 {
+  margin-bottom: 2rem;
+}
+
+.investment-card {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 2rem;
+  margin: 1rem;
+  text-align: left;
+}
+
+.investment-card img {
+  width: 100%;
+  height: auto;
+}
+
+.investment-card h3 {
+  font-size: 1.5rem;
+}
+
+.investment-card p {
+  font-size: 1rem;
+}
+
+.investment-card .learn-more {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.investment-card .learn-more:hover {
+  background-color: #357abd;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
