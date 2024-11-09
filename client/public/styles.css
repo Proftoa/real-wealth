@@ -3,7 +3,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
   margin: 0;
+
   padding: 0;
+  line-height 1.6;
 }
 
 /* Navigation Bar */
@@ -21,7 +23,7 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -38,12 +40,12 @@ nav ul li a:hover {
 }
 
 .header-container h1 {
-  font-size: 3em;
+  font-size: 6em;
   color: #264653;
 }
 
 .header-container p {
-  font-size: 1.5em;
+  font-size: 3em;
   color: #6c757d;
 }
 
@@ -67,7 +69,7 @@ button.learn-more:hover {
 footer {
   background-color: #2f3d4a;
   color: white;
-  padding: 20px 0;
+  padding: 0px 0;
   text-align: center;
 }
 

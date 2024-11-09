@@ -1,26 +1,29 @@
-
 import React from 'react';
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
 import Home from './components/Home';
 import Register from './components/Register';
 import Login from './components/Login';
-import Navbar from './components/Navbar';
+//import About from './components/About';
+import About from './components/About';
+import Investments from './components/Investments';
+import Contact from './components/Contact';
 
 function App() {
   return (
     <Router>
-      <Navbar />
-
       <Routes>
-        <Route exact path='/' component={Home} />
-        <Route path='/register' component={Register} />
-        <Route path='/login' component={Login} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
 
+        <Route path="/about" element={<About />} />
+        <Route path="/investments" element={<Investments />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
