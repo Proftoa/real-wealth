@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Register.css';
+import axios from 'axios';
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -14,11 +15,33 @@ const Register = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const onSubmit = (e) => {
+  /*const onSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Add registration logic here (API call)
+   axios.post('http://localhost:5000/register', formData)
+   .then((response) => {
+    console.log('User registered:', response.data);
+    window.location.href = "/login";
+   })
+   .catch((error) =>{
+    console.error('Error Registering user', error);
+   });
+  };*/
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    axios.post('http://localhost:5000/register/', formData)
+      .then((response) => {
+        console.log('User registered:', response.data);
+        alert('Registration successful!'); // Feedback to user
+        window.location.href = '/login';   // Redirect to login page or home
+      })
+      .catch((error) => {
+        console.error('Error registering user:', error);
+        alert('Error registering user. Please try again.');
+      });
   };
+  
 
   return (
     <div className="register-container">
