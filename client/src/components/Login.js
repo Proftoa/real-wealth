@@ -18,7 +18,7 @@ const Login = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    //console.log('Login submitted:', formData);
+    console.log('Login submitted:', formData);
     // Add login logic here (API call)
 
     try {
